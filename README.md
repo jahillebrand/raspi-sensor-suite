@@ -1,4 +1,4 @@
-# raspi-ip-pusher
+# Raspi Sensor Suite
 ## Simple python script to send the user a Pushbullet notification with the host device's IP address
 
 To set up this script:
