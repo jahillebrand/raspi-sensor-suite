@@ -15,7 +15,7 @@ import time
 # Abstract away variables
 repeat = True
 wait_time = 1 #45
-pushbullet_auth = "o.qtFf5pm2aBzc1HMKEAeVMSUkhd14k9sR"
+pushbullet_auth = ""
 message_title = "Raspi IP"
 ip_prev = ""
 iteration_count = 0 # Want a heartbeat every 3rd iteration (1.5 hrs)
