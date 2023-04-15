@@ -21,15 +21,14 @@ iPHeader = "Apollo IP"
 vitalsHeader = "House Vitals"
 
 #Configurable delay times
-bootDelay = 1 #seconds
-transmissionDelay = 5 #seconds, 2 hours
+bootDelay = 45 #seconds
+transmissionDelay = 7200 #seconds, 2 hours
 
 #Boot delay
 time.sleep(bootDelay)
 
 #1 get initial IP address, record it, and send it to pushbullet
 previousIP = get_ip_addr()
-print("made it here")
 send_pushbullet_msg(previousIP, iPHeader)
 
 #2 begin looping

@@ -16,7 +16,7 @@ def read_from_ens160():
     # Validate data being read
     dataAreValid = False
     while (not dataAreValid):
-        print(f"{ens.AQI}  {ens.TVOC}  {ens.eCO2}\n")
+        #print(f"{ens.AQI}  {ens.TVOC}  {ens.eCO2}\n")
         dataAreValid = ens.AQI > 0 and ens.TVOC > 0 and ens.eCO2 > 0
         time.sleep(3)
     
@@ -32,13 +32,13 @@ def read_from_ens160():
     #     time.sleep(3)
 
 
-def validate_ens_data():
-    dataAreValid = False
-    while (not dataAreValid):
-        readAQI, readTVOC, readECO2 = read_from_ens160()
-        print(f"{readAQI}  {readTVOC}  {readECO2}\n")
-        dataAreValid = readAQI > 0 and readTVOC > 0 and readECO2 > 0
-        #time.sleep(1)
+# def validate_ens_data():
+#     dataAreValid = False
+#     while (not dataAreValid):
+#         readAQI, readTVOC, readECO2 = read_from_ens160()
+#         print(f"{readAQI}  {readTVOC}  {readECO2}\n")
+#         dataAreValid = readAQI > 0 and readTVOC > 0 and readECO2 > 0
+#         #time.sleep(1)
 
-    return readAQI, readTVOC, readECO2
+#     return readAQI, readTVOC, readECO2
     

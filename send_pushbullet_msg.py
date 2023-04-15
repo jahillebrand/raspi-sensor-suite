@@ -17,6 +17,5 @@ def send_pushbullet_msg(message, title):
         pushbullet_auth = file_handler.read().strip(' \n')
 
     bash_command = "curl --silent -u \"\"\"" + pushbullet_auth + "\"\":\" -d type=\"note\" -d body=" + message + " -d title=\"" + title + "\" 'https://api.pushbullet.com/v2/pushes'"
-    print(bash_command)
     os.system(bash_command)
 
